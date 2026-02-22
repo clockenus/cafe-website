@@ -1,0 +1,65 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    border: none;
+    background-color: transparent;
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    transform: translateY(5dvh);
+    opacity: 0;
+}
+
+.visible {
+    transform: translateY(0);
+    opacity: 1;
+    transition: 0.3s ease-out;
+}
+
+a {
+    color: inherit;
+    transition: 0.3s ease-in-out;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+.button {
+    cursor: pointer;
+    transition: 150ms ease;
+}
+
+.button:hover {
+    scale: 1.15;
+}
+
+.icon {
+    content: '';
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.icon-l {
+    width: 2rem;
+    height: 2rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+footer {
+    background-color: darkslategray;
+    color: #F9F9F9;
+}
