@@ -2,9 +2,9 @@ footer {
     position: relative;
     color: #F9F9F9;
     background-color: #2B231D;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     z-index: -1;
-    height: 90vh;
+    aspect-ratio: 900 / 600;
     width: 100%;
 
     display: flex;
@@ -31,5 +31,5 @@ footer::before {
     bottom:0;
     left:0;
     width: 100%;
-    margin: 2rem;
+    padding: 2rem;
 }
