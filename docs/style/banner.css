@@ -6,7 +6,8 @@
     color: #F9F9F9;
     position: relative;
     overflow: hidden;
-    height: 80dvh;
+    min-height: 25rem;
+    height: 80vh;
     background: rgba(0, 0, 0, 0.25);
     border-radius: 0 0 3rem 3rem;
 }

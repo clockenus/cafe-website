@@ -1,10 +1,10 @@
 #content {
     position:relative;
     bottom: 17.25rem;
+    padding-inline: 1rem;
 }
 
 #menu {
-    padding-inline: 1rem;
     padding-bottom: 8rem;
 }
 

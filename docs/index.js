@@ -1,7 +1,10 @@
 const body = document.querySelector('body');
-const header = document.querySelector('header');
+const headbar = document.querySelector('.headbar');
+const sidebar = document.querySelector('.sidebar');
 const main = document.querySelector('main');
 const content = main.querySelector('#content');
+const footer = document.querySelector('footer');
+const banner = document.querySelector('#banner')
 
 const hiddenObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -20,15 +23,26 @@ hiddenElements.forEach(element => {
     hiddenObserver.observe(element);
 });
 
-const headerObserver = new IntersectionObserver((entries) => {
+const navObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            header.classList.remove('header-hidden');
+            headbar.classList.add('headbar-hidden');
+            sidebar.classList.add('sidebar-hidden');
         } else {
-            header.classList.add('header-hidden');
+            headbar.classList.remove('headbar-hidden');
         }
     });
 }, {
-    threshold: 0.1
+    threshold: 0.8
 });
-headerObserver.observe(content);
+navObserver.observe(banner);
+
+function showSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.remove('sidebar-hidden');
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.add('sidebar-hidden');
+}
